@@ -20,11 +20,11 @@ export default function ProductDetails() {
 
     return (
         <Page>
-            <div style={{
+            <div className="productDetails" style={{
                 display: "flex",
                 gap: "3em"
             }}>
-                <div style={{
+                <div className="productDetailsImg" style={{
                     display: "flex",
                     justifyContent: "center",
                     height: "20rem"
@@ -41,6 +41,9 @@ export default function ProductDetails() {
                                                         shirt8 : pathname === "/products/glitz-and-glamour" ?
                                                             shirt9 : shirt10}
                         alt="Good Egg"
+                        style={{
+                            height: "100%"
+                        }}
                     />
                 </div>
                 <div style={{

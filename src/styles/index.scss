@@ -12,10 +12,74 @@
   color: inherit;
 }
 
+html {
+  @media screen and (max-width: 700px) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 10px;
+  }
+}
+
+.navbarLinks {
+  @media screen and (max-width: 380px) {
+    display: none !important;
+  }
+}
+
 .App {
   position: relative;
 }
 
 button {
   cursor: pointer;
+}
+
+.products {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+
+  @media screen and (max-width: 880px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  @media screen and (max-width: 400px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+.section {
+  @media screen and (max-width: 880px) {
+    flex-direction: column !important;
+
+    &Container {
+      justify-content: center !important;
+      order: 1;
+    }
+
+    &Text {
+      order: 2;
+      width: 100% !important;
+    }
+  }
+}
+
+.page {
+  @media screen and (max-width: 880px) {
+    padding-inline: 4rem !important;
+  }
+}
+
+.productDetails {
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+
+    &~div {
+      display: none !important;
+    }
+  }
 }

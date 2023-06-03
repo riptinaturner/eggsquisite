@@ -1,10 +1,10 @@
 export default function Section({ src, heading, text }) {
     return (
-        <div style={{
+        <div className="section" style={{
             display: "flex",
             gap: "3em"
         }}>
-            <div style={{
+            <div className="sectionText" style={{
                 display: "flex",
                 flexDirection: "column",
                 gap: "1em",
@@ -21,15 +21,15 @@ export default function Section({ src, heading, text }) {
                 }}>{text}</div>
             </div>
 
-            <div style={{
+            <div className="sectionContainer" style={{
                 display: "flex",
                 justifyContent: "flex-end",
-                flex: 1
+                alignItems: "center"
             }}>
                 <img
                     src={src}
                     alt={heading}
-                    style={{ width: "16rem" }}
+                    style={{ maxWidth: "16rem" }}
                 />
             </div>
         </div>

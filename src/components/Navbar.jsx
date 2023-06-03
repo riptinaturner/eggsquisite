@@ -46,7 +46,7 @@ export default function Navbar() {
                 }}>Eggsquisite</span>
             </a>
 
-            <div style={{
+            <div className="navbarLinks" style={{
                 display: "flex",
                 alignItems: "center",
                 gap: "1.7em",

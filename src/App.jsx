@@ -11,14 +11,21 @@ function App() {
     <div className="App">
       <div style={{
         background: "rgb(100, 255, 210)",
-        paddingBlock: ".6em",
+        padding: ".6em 4rem",
+        whiteSpace: "nowrap",
+        textOverflow: "ellipsis",
+        overflow: "hidden",
         fontWeight: 700,
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         gap: ".4em"
       }}>
-        EGGCELENT SALE 🥚🔥 <span>15% off EVERYTHING in the store. Enjoy!</span>
+        EGGCELENT SALE 🥚🔥 <span style={{
+          whiteSpace: "nowrap",
+          textOverflow: "ellipsis",
+          overflow: "hidden"
+        }}>15% off EVERYTHING in the store. Enjoy!</span>
       </div>
 
       <Navbar />

@@ -57,7 +57,7 @@ export default function Hero() {
                     gap: "6em"
                 }}
             >
-                <div style={{
+                <div className="heroText" style={{
                     display: "flex",
                     flexDirection: "column"
                 }}>
@@ -65,13 +65,13 @@ export default function Hero() {
                         fontSize: "1.8rem",
                         fontWeight: 700
                     }}>Egg Day is Here!</div>
-                    <div style={{
+                    <div className="heroDesc" style={{
                         fontSize: "1.05rem",
                         marginTop: "1em",
                         lineHeight: "1.8rem",
                     }}>
                         Welcome to Eggsquisite, the best place to celebrate the best day of the year, Egg Day!
-                        Whether you love scrambled, boiled, fried or poached eggs, we have the perfect shirt for you. Celebrate the most eggciting day of the year with our fun and colorful designs. Hurry and order now before they sell out!
+                        Whether you love scrambled, boiled, fried or poached eggs, we have the perfect shirt for you. Celebrate the most eggciting day of the year with our fun and colorful designs.
                     </div>
                     <a
                         className="heroExploreBtn"
@@ -87,12 +87,13 @@ export default function Hero() {
                         }}
                     >Explore</a>
                 </div>
-                <div style={{
+                <div className="heroImgContainer" style={{
                     height: "15rem",
                     display: "flex",
                     justifyContent: "center"
                 }}>
                     <img
+                        className="heroImg"
                         src={prodArr[curr]}
                         alt={"Tee Shirt No. " + curr}
                         style={{ height: "100%" }}

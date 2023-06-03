@@ -16,12 +16,10 @@ export default function Products({ style }) {
     return (
         <Page style={style}>
             <h1>Our Tees</h1>
-            <div style={{
+            <div className="products" style={{
                 display: "grid",
-                gridTemplateColumns: "repeat(5, minmax(0, 1fr))",
                 gap: "1em",
-                marginTop: "2em",
-
+                marginTop: "2em"
             }}>
                 <ProductPreview
                     title="Good Egg"

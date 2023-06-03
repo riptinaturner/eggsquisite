@@ -30,4 +30,24 @@
             background: rgb(0, 0, 0, .9)
         }
     }
+
+    @media screen and (max-width: 880px) {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        a {
+            width: 100% !important;
+            padding-block: .7em !important;
+            font-size: 1.3rem !important;
+        }
+
+        &ImgContainer {
+            display: none !important;
+        }
+
+        &Desc {
+            display: none;
+        }
+    }
 }
