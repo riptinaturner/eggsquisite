@@ -5,7 +5,6 @@ const cors = require("cors")
 require("dotenv").config(".env")
 const port = 3000
 const stripe = require("stripe")(process.env.STRIPE_KEY)
-const path = require("path")
 
 app.use(express.static("../dist"))
 app.use(express.json())
@@ -37,11 +36,6 @@ app.get('/api/payment/:id', async (req, res) => {
 
     res.redirect(303, session.url)
 })
-/* 
-app.get("/*", (req, res) => {
-    res.sendFile(path.resolve("../dist/index.html"))
-})
- */
 
 app.listen(port, () => {
     console.log("Running on port", port)
