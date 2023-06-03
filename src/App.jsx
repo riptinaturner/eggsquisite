@@ -18,7 +18,7 @@ function App() {
         alignItems: "center",
         gap: ".4em"
       }}>
-        EGGCELENT SALE 🥚🔥 <span>30% off EVERYTHING in the store. Enjoy!</span>
+        EGGCELENT SALE 🥚🔥 <span>15% off EVERYTHING in the store. Enjoy!</span>
       </div>
 
       <Navbar />

@@ -37,11 +37,11 @@ app.get('/api/payment/:id', async (req, res) => {
 
     res.redirect(303, session.url)
 })
-
+/* 
 app.get("/*", (req, res) => {
     res.sendFile(path.resolve("../dist/index.html"))
 })
-
+ */
 
 app.listen(port, () => {
     console.log("Running on port", port)
