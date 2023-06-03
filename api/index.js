@@ -30,8 +30,8 @@ app.get('/api/payment/:id', async (req, res) => {
             },
         ],
         mode: 'payment',
-        success_url: `http://localhost:3000/success`,
-        cancel_url: `http://localhost:3000/cancel`,
+        success_url: `https://eggsquisite.vercel.app/success`,
+        cancel_url: `https://eggsquisite.vercel.app/cancel`,
     })
 
     res.redirect(303, session.url)
