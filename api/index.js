@@ -5,8 +5,9 @@ const cors = require("cors")
 require("dotenv").config(".env")
 const port = 3000
 const stripe = require("stripe")(process.env.STRIPE_KEY)
+const path = require("path")
 
-app.use(express.static("dist"))
+app.use(express.static("../dist"))
 app.use(express.json())
 
 app.use(cors({
@@ -38,7 +39,7 @@ app.get('/api/payment/:id', async (req, res) => {
 })
 
 app.get("/*", (req, res) => {
-    res.sendFile(__dirname + "/dist/index.html")
+    res.sendFile(path.resolve("../dist/index.html"))
 })
 
 
