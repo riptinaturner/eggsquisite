@@ -1,0 +1,33 @@
+.hero {
+    &ExploreBtn {
+        background: rgb(35, 35, 35);
+
+        &:hover {
+            background: rgb(30, 30, 30);
+        }
+
+        &:active {
+            background: rgb(0, 0, 0);
+        }
+    }
+
+    &ImgBtn {
+        color: white;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgb(0, 0, 0, .75);
+        border: none;
+        font-size: 1.7rem;
+        padding: .3em .4em .3em .3em;
+        transition: background .2s;
+
+        &:hover {
+            background: rgb(0, 0, 0, .8)
+        }
+
+        &:active {
+            background: rgb(0, 0, 0, .9)
+        }
+    }
+}
